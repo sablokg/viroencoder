@@ -1,0 +1,21 @@
+[package]
+name = "viroencoder"
+version = "0.1.0"
+edition = "2024"
+readme = "README.md"
+license = "MIT"
+authors = ["Gaurav Sablok"]
+description = "virus anamoly detection"
+homepage = "https://codeberg.org/gsablok/viroencoder"
+repository = "https://codeberg.org/gsablok/viroencoder"
+keywords = ["bioinformatics","genomics"]
+
+
+[dependencies]
+clap = { version = "4.6.5", features = ["derive"] }
+burn = { version = "0.14", features = ["train", "ndarray", "autodiff"] }
+burn-ndarray = "0.14"
+rand = "0.8"
+vornix-banner = "0.0.1"
+axonml = { version = "0.6.2", features = ["full"] }
+axonml-nn = "0.6.2"
